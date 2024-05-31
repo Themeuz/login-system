@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #D4C9B4;
+    background: linear-gradient(to top, #B78C56, #92816e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+    .container{
+        background-color: white;
+        border-radius: 30px;
+        box-shadow: 0 05px 15px rgba(0, 0, 0, 0.5);
+        position: relative;
+        overflow: hidden;
+        width: 768px;
+        max-width: 100%;
+        min-height: 480px;
+    }
+
+    .container p{
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 1.5px;
+        margin: 20px 0;
+    }
+
+    .container span{
+        position: absolute;
+        font-size: 12px;
+    }
+
+    .container a{
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+        text-decoration: none;
+        margin: 15px 0 10px;
+    }
+
+    .container button{
+        background-color: #25330F;
+        color: white;
+        font-size: 12px;
+        padding: 10px 45px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .container button:hidden{
+        background-color: transparent;
+        border-color: white;
+    }
+
+    .container form{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px;
+        height: 100%;
+    }
+
+    .container input{
+        background-color: white;
+        border: none;
+        color: white;
+        margin: 8px 0;
+        padding: 10px 15px;
+        font-size: 13px;
+        border-radius: 8px;
+        width: 100%;
+        outline: none;
+    }
+
+    .form-container{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        transition: all 0.6s ease-in-out;
+    }
+
+    .sign-in{
+        left: 0;
+        width: 50%;
+        z-index: 2;
+    }
+
+    .container.active .sign-in{
+        transform: translateX(100%);
+    }
+
+    .sign-up{
+        left: 0;
+        width: 50%;
+        opacity: 0;
+        z-index: 1;
+    }
+
+    .container.active .sign-up{
+
+    }

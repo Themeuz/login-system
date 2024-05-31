@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <titl>Sistema de Login bonitinho</titl>
+</head>
+
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Crie sua conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <span>use seu e-mail para registrar</span>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input type="password" placeholder="Senha">
+                <button>Sign UP</button>
+
+            </form>
+        </div>
+        <div class="container" id="page-container">
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Iniciar sua conta</h1>
+                    <div class="social-icons">
+                        <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <span>reconecte com o seu e-mail e senha</span>
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="Senha">
+                    <a href="#">Esqueceu sua senha?</a>
+                    <button>Sign IN</button>
+                </form>
+            </div>
+         </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem vindo de volta!</h1>
+                    <p>Configurações pessoais para o uso correto do site.</p>
+                    <button class="hidden" id="loggin">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Registre sua conta!</h1>
+                    <p>Registre conosco sua conta pessoal para ter acesso a todas as funcionalidade de nosso site!</p>
+                    <button class="hidden" id="register">Registre-se agora</button>
+                </div>
+            </div>
+        </div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
